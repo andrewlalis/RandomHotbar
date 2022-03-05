@@ -24,11 +24,13 @@ public class BlockPlaceListener implements NativeMouseInputListener {
 			randSum += v.chance();
 		}
 		this.settings = settings;
+		System.out.println("-".repeat(20));
 		for (var v : settings) {
 			float percent = (v.chance() / randSum) * 100.0f;
 			System.out.printf("Will use slot %d, %.1f%% of the time.\n", v.slot(), percent);
 		}
-		System.out.printf("Starting at slot %d. Please select this slot if it is not selected already, then start right-clicking. Do not hold right-click.\n", currentSlot);
+		System.out.println("-".repeat(20));
+		System.out.printf("Starting at slot %d.\n! Please select this slot if it is not selected already, then start right-clicking.\n! Do not hold right-click.\n", currentSlot);
 	}
 
 	private int getNextSlot() {
