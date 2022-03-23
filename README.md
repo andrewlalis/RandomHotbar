@@ -16,3 +16,12 @@ For example:
 ```
 java -jar RandomHotbar.jar 1:1, 2:1, 3:1.5, 4:0.75
 ```
+
+Alternatively, if you like spam-clicking to place randomized blocks, opt instead for the **cycle** option. It's used like so:
+```
+java -jar RandomHotbar.jar cycle
+```
+Using this setting, you will automatically cycle through all hotbar slots, shifting in random intervals to make sure that no patterns are introduced in the blocks you place. You can also restrict the cycle mode to the first N slots like so:
+```
+java -jar RandomHotbar.jar cycle 3
+```
